@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Age calculator</h1>
+    <dive id="age">
+      <div id="years"></div>
+      <div id="months"></div>
+      <div id="days"></div>
+    </dive>
+    <div class="container">
+      <form action="#">
+        <input type="date" id="birthdate" placeholder="yyyy-mm-dd" />
+        <button onclick="agecalcfunc()">Calculate</button>
+      </form>
+    </div>
+    <script>
+      function agecalcfunc() {
+        const birthdate = document.getElementById("birthdate").value;
+        // datelist = birthdate.split("-").map((e) => parseInt(e));
+        // to include leap seconds
+        let agemseconds = Date.now() - Date.parse(birthdate);
+        let years = parseInt(agemseconds / 31536000000);
+        let months = parseInt((agemseconds % 31536000000) / 2629746000);
+        let days = parseInt(
+          ((agemseconds % 31536000000) % 2629746000) / 86400000
+        );
+        document.getElementById("years").innerText = `Years:${years}`;
+        document.getElementById("months").innerText = `Months:${months}`;
+        document.getElementById("days").innerText = `Days:${days}`;
+      }
+    </script>
+  </body>
+  <style>
+    body {
+      background-color: #ccbec9;
+      color: #693c60;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-family: sans-serif;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      text-align: center;
+    }
+
+    #age {
+      display: flex;
+      flex-direction: row;
+      margin: 10px;
+      margin-bottom: 25px;
+      height: 25px;
+    }
+
+    #age > div {
+      margin: 5px;
+      font-weight: bolder;
+    }
+  </style>
+</html>

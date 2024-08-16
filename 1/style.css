@@ -1,0 +1,56 @@
+body {
+  background-color: #ccbec9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.contact-wraper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 250px;
+  margin: 25px;
+  border-radius: 15px;
+  background-color: #693c60;
+  color: #00000000;
+}
+
+.icon {
+  color: #ccbec9;
+  font-size: 35px;
+}
+
+.info {
+  position: absolute;
+  text-align: center;
+}
+
+.card:hover > .icon {
+  position: relative;
+  bottom: 25%;
+  right: 36.5%;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.card:hover {
+  background-color: #ad87a6;
+  color: #000000;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .contact-wraper {
+    flex-direction: column;
+  }
+}

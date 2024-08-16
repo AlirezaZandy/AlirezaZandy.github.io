@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 5</title>
+  <link href="./style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+
+    <div id="logo" class="d-flex justify-content-center align-items-center my-4">
+      <img src="https://hosseinshpr1380.github.io/Bootstrap-task/logo.png" alt="logo" />
+    </div>
+
+    <div id="navbar" class="d-flex align-items-center justify-content-between bg-mycolor p-1">
+      <nav>
+        <ui class="nav">
+          <li class="ms-2 nav-item "><a href="#" class="nav-link link-light">Link 1</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-light">Link 2</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-light">Link 3</a></li>
+        </ui>
+      </nav>
+      <form id="search-bar" class="d-flex justify-content-center align-items-center">
+        <input type="text" class="form-control">
+        <button class="btn btn-primary btn-m mx-2 my-1">Search</button>
+      </form>
+    </div>
+
+  </header>
+  <main>
+    <div id="main-banner" class="d-flex justify-content-center align-items-center my-5">
+      <img src="https://hosseinshpr1380.github.io/Bootstrap-task/service-8.jpg">
+      <div id="visitenkarte" class="card p-4" style="width: 40rem; background-color: #6c757d;">
+        <img src="https://hosseinshpr1380.github.io/Bootstrap-task/cache_60889691.png" alt="banner"
+          class="card-img-top mb-4">
+        <div class="card-body">
+          <P class="card-text">In der Schornau 25 A44892 Bochum</P>
+          <P class="card-text">Telefon: 0234 640 55 877 Telefax: 0234 640 55 879</P>
+          <P class="card-text">E-Mail: info@radiochirurgie-rub.de</P>
+        </div>
+        <button class="btn btn-primary mt-4" style="width: 10rem;">See profile</button>
+      </div>
+    </div>
+
+    <div id="main-info" class="d-flex flex-column justify-content-center py-3 px-5 mb-5"
+      style="background-color: #474c52; color:#4c96d7;">
+      <h2 class="d-flex justify-content-center">Die Radiochirurgie - Hirntumore behandeln:</h2>
+      <p class="text-center">Die Behandlung von Hirntumoren (Neuroonkologie) stellt eine interdisziplinäre und
+        technische Herausforderung
+        dar. Im Gamma Knife Zentrum Bochum wird dazu eine spezielle Form der Strahlentherapie eingesetzt: Die
+        Radiochirurgie. Das Gamma Knife Zentrum Bochum ist auf die Behandlung von Hirntumoren (Neuroonkologie)
+        spezialisiert. Die Behandlung erfordert die Zusammenarbeit der medizinischen Fachrichtungen Neuroonkologie
+        /Strahlentherapie / Neuroradiologie / Neurochirurgie.</p>
+    </div>
+
+    <div class="card-group text-center p-5 my-5">
+      <div class="card">
+        <img src="https://hosseinshpr1380.github.io/Bootstrap-task/cache_60890167.jpg" class="card-img-top"
+          alt="profilepic">
+        <div class="card-body">
+          <h3 class="card-title">John Doe</h3>
+          <p class="card-text">Lorem ipsum</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://hosseinshpr1380.github.io/Bootstrap-task/cache_60890168.jpg" class="card-img-top"
+          alt="profilepic">
+        <div class="card-body">
+          <h3 class="card-title ">John Doe</h3>
+          <p class="card-text">Lorem ipsum</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://hosseinshpr1380.github.io/Bootstrap-task/cache_60890169.jpg" class="card-img-top"
+          alt="profilepic">
+        <div class="card-body">
+          <h3 class="card-title">Jane Doe</h3>
+          <p class="card-text">Lorem ipsum</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="d-flex flex-column justify-content-center py-3 px-5 mb-5"
+    style="background-color: #474c52; color:#4c96d7;">
+    <h3 class="d-flex justify-content-center">Mehr Erfolg durch enge Vernetzung:</h3>
+    <p class="text-center">Die Ärzte des Gamma Knife Zentrums Bochum arbeiten eng mit den Fachkollegen der
+      Universitätskliniken für
+      Neurologie und Neurochirurgie, des Instituts für Radiologie, Neuroradiologie und Nuklearmedizin und des
+      Onkologischen Zentrums des Knappschaftskrankenhauses Bochum sowie der Klinik für Strahlentherapie und
+      Radioonkologie des Marien Hospitals Herne / Universitätsklinikum der Ruhr-Universität Bochum zusammen.</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+<style>
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #navbar {
+    width: 100%;
+  }
+
+  .bg-mycolor {
+    background-color: #4c96d7;
+  }
+
+  #visitenkarte {
+    position: absolute;
+  }
+
+  footer {
+    background: linear-gradient(145deg, #474c52, #5388b6)
+  }
+</style>
+
+</html>
