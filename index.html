@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="Tasks">
+        <a href="./1/index.html">Task 1</a>
+        <a href="./2/index.html">Task 2</a>
+        <a href="./3/index.html">Task 3</a>
+        <a href="./4/index.html">Task 4</a>
+        <a href="./5/index.html">Task 5</a>
+        <a href="./6/index.html">Task 6</a>
+        <a href="./7/index.html">Task 7</a>
+    </div>
+</body>
+<style>
+    body {
+        height: 100vh;
+        margin: auto;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #693c60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Tasks {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Tasks a {
+        background-color: #ccb8c8;
+        color: #693c60;
+        padding: 25px;
+        margin: 25px;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: large;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    
+    a:hover {
+        background-color: #92808e;
+        color: #41223a; 
+    }
+    @media screen and (max-width: 600px) {
+        .Tasks {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+</style>
+
+</html>
